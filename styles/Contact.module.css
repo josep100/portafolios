@@ -1,0 +1,13 @@
+.contact {
+    padding: 3rem 1rem;
+    background: #e8f5e9;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}

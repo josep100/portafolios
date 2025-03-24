@@ -1,0 +1,17 @@
+.projects{
+    padding: 3rem 1rem;
+    background: #ffffff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
