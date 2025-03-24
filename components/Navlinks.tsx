@@ -1,6 +1,6 @@
 import {useActiveSection} from "@/context/ ActiveSectionContext";
 
-export default function NavLinks ({ className, setIsOpen, isOpen }: { className: string, isOpen?: boolean, setIsOpen?: React.Dispatch<React.SetStateAction<boolean>> }){
+export default function NavLinks ({ className, setIsOpen }: { className: string,setIsOpen?: React.Dispatch<React.SetStateAction<boolean>> }){
     const {activeSection, setActiveSection} = useActiveSection();
     
       function handleClick(section: string) {
