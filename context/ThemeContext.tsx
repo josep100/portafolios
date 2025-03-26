@@ -16,11 +16,17 @@ const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 
 //Proveedor del contexto
 export const ThemeProvider = ({ children }: { children: ReactNode }) =>{
-    const [theme, setTheme] = useState<ThemeType>(() => localStorage.getItem("theme") as ThemeType || "light");
+    const [theme, setTheme] = useState<ThemeType>("light");
     const [systemPrefersDark, setSystemPrefersDark] = useState<boolean>(false);
     
 
     useEffect(() => {
+        //solo acceder a localStorage en el cliente
+        const savedTheme = localStorage.getItem("theme") as ThemeType;
+        if(savedTheme){
+            setTheme(savedTheme);
+        }
+
         const mediaQuery = window.matchMedia("(prefers-color-scheme:dark)");
 
         // Guardamos la preferencia en el estado
@@ -43,8 +49,6 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) =>{
     useEffect(() => {
         const htmlElement = document.documentElement;
         
-       
-
         if (theme === "system") {
             if (systemPrefersDark) {
                 htmlElement.classList.add("dark");

@@ -1,5 +1,6 @@
 import { projects } from '@/data/projects';
 import { useTheme } from "@/context/ThemeContext";
+import Image from 'next/image';
 import EyeHubIcon from '@/components/icons/EyeHubicon';
 import GitHubIcon from '@/components/icons/GitHubicon';
 import StarryBackground from '@/components/Starrybackground';
@@ -18,7 +19,7 @@ export default function Projects(){
                     projects.map(({id, link, img, title, gitHub, description}, index) => (
                         <div data-aos="fade-up" data-aos-delay={index > 0 ? index * 200 : 0} data-aos-duration="300" className='col-span-12 flex min-h-[400px] flex-col overflow-hidden rounded-lg dark:bg-transparent dark:border-4 dark:border-gray-500/50 bg-white shadow-[0_0.5rem_1rem_rgba(0,_0,_0,_0.15)] md:col-span-6 lg:col-span-4' key={id}>
                             <figure>
-                                <img className='h-auto w-full object-cover' src={img} alt={title} />
+                                <Image className='h-auto w-full object-cover' src={img} alt={title} width={0} height={0}/>
                                 <figcaption className='my-2 px-2 text-xl font-semibold dark:text-white text-black'>{title}</figcaption>
                                 <figcaption className='line-clamp-5 px-2 text-sm dark:text-gray-300 text-black'>{description}</figcaption>
                             </figure>

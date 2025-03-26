@@ -1,6 +1,6 @@
-"use client";
 
-import { ThemeProvider } from "@/context/ThemeContext";
+
+/*import { ThemeProvider } from "@/context/ThemeContext";
 import ActiveSectionProvider from "@/context/ ActiveSectionContext";
 import { useEffect, useState } from 'react';
 import '@/app/globals.css'
@@ -44,7 +44,7 @@ export default function RootLayout(){
                     <main>
                         <Intro />
                         <About />
-                        {/*bg-gradient-to-b dark:from-blue-950 dark:to-black*/}
+                        bg-gradient-to-b dark:from-blue-950 dark:to-black
                         <Skills />
                         <Projects />
                         <Contact />
@@ -58,4 +58,25 @@ export default function RootLayout(){
             </body>
         </html>
     );
+}*/
+
+import { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "@/app/globals.css";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Mi Portafolio",
+  description: "Portafolio profesional",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="es">
+      <body className={`${inter.className} bg-gradient-to-b dark:from-blue-950 dark:to-black bg-white`}>
+        {children}
+      </body>
+    </html>
+  );
 }

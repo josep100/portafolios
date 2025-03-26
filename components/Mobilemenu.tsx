@@ -25,7 +25,7 @@ export default function MobileMenu({ isOpen, setIsOpen }: { isOpen: boolean, set
                 </button>
                 <div className="my-auto flex flex-col items-center gap-10">
                     <nav>
-                        <NavLink className="flex flex-col items-center gap-5" setIsOpen={setIsOpen} isOpen = {isOpen} />
+                        <NavLink className="flex flex-col items-center gap-5" setIsOpen={setIsOpen} />
                     </nav>
                     <div className='flex gap-5 text-2xl dark:text-white'>
                         <a href="https://github.com/" target='black' className='hover:animate-zoom'><GitHubIcon /></a>

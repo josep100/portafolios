@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 .bg-primary-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));

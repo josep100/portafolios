@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "@/context/ThemeContext";
+import Image from "next/image";
 import Navbar from '@/components/Navbar';
 import GitHubIcon from "@/components/icons/GitHubicon";
 import LinkHubIcon from "@/components/icons/LinkHubicon";
@@ -8,7 +9,7 @@ import DarkMode from '@/components/Darkmode';
 import clsx from 'clsx';
 
 
-export default function Header ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: React.Dispatch<React.SetStateAction<boolean>> }){
+export default function Header ({setIsOpen }: { setIsOpen: React.Dispatch<React.SetStateAction<boolean>> }){
 
     const [isAtTop, setIsAtTop] = useState(true);
     const { theme, systemPrefersDark } = useTheme();
@@ -34,10 +35,13 @@ export default function Header ({ isOpen, setIsOpen }: { isOpen: boolean, setIsO
             >
                 <div className='container mx-auto flex justify-center items-center gap-20 px-2 py-4 sm:px-4'>
                     <figure>
-                            <img 
+                            <Image 
                                 src='/images/IMG_4336.jpeg' 
                                 alt='foto personal'
-                                className='rounded-full size-10 shadow-lg'
+                                className='rounded-full size-10 shadow-lg '
+                                width={0}
+                                height={0}
+                                
                             />
                     </figure>
                     <Navbar />
