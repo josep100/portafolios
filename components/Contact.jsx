@@ -41,10 +41,10 @@ export default function Contact(){
                 <div className="container mx-auto grid grid-cols-2 gap-10 overflow-hidden px-2 py-32 sm:gap-5 sm:px-4">
                     <div data-aos="fade-right" data-aos-duration="200" className="col-span-2 sm:col-span-1 dark:text-white text-black">
                             <h1 className="mb-5 text-2xl font-bold uppercase">mantengámonos en contacto</h1>
-                            <a className="mr-4 inline-block hover:animate-zoom" href="">
+                            <a href="https://www.linkedin.com/in/josep-perales/" className="mr-4 inline-block hover:animate-zoom" target="_blank">
                                 <LinkHubIcon tamaño="text-3xl" />
                             </a>
-                            <a className="inline-block hover:animate-zoom" href="">
+                            <a href="https://github.com/josep100" className="inline-block hover:animate-zoom" target="_blank">
                                 <GitHubIcon tamaño="text-3xl" />
                             </a>
                     </div>
