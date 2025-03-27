@@ -30,7 +30,7 @@ export default function Projects(){
                                         : "bg-primary-500 hover:animate-zoom dark:border-2 dark:border-cyan-500 dark:bg-transparent"
                                     )}
                                     href={description === "Próximamente" ? "#" : link} onClick={(e) => description === "proximamente" && e.preventDefault()}
-                                    target='_blanc'
+                                    target='_blank'
                                 >
                                     <EyeHubIcon />
                                     Demo
@@ -41,7 +41,7 @@ export default function Projects(){
                                         :'border-cyan-500  text-cyan-500 hover:animate-zoom'
                                     }`}
                                     href={description === 'Próximamente' ? '#' : gitHub} onClick={(e) => description === 'proximamente' && e.preventDefault()}
-                                    target='_blanck'
+                                    target='_blank'
                                 >
                                     <GitHubIcon />
                                     Repo
