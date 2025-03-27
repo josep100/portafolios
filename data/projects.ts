@@ -1,10 +1,10 @@
 export const projects = [
     {
         id:1,
-        link: "https://www.concatofilippo.com/companymanagementsystem/",
+        link: "https://portafolio-josep.vercel.app",
         img: "/images/portafolio.png",
         title: "Portafolios",
-        gitHub: "https://github.com/josep100/mi-portafolio",
+        gitHub: "https://github.com/josep100/portafolios",
         description: "Mi portafolio es un reflejo digital de mi crecimiento, mis habilidades y mi experiencia en el ámbito del desarrollo FontEnd. Esta plataforma, creada meticulosamente con HTML, JavaScript, Nextjs y Tailwind, ofrece una visión integral de los proyectos que he llevado a cabo.",
     },
     {
