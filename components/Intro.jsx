@@ -13,7 +13,7 @@ export default function Intro (){
                 <div className="relative ">
                     <div className="dark:bg-transparent bg-primary-500">
                         <div className="container md:ml-0 flex flex-col md:flex-row justify-center items-center gap-11 xl:gap-52  py-20 xl:pl-56 sm:px-4">
-                            <div className="dark:text-white text-black col-span-2 lg:col-span-1 w-[255px]">
+                            <div className="dark:text-white text-black col-span-2 lg:col-span-1 w-[284px]">
                                 <h1 className="text-6xl font-bold leading-tight drop-shadow-xl">Josep<br />Perales</h1>
                                 <span className="text-xl font-light uppercase leading-10">
                                     <TypeAnimation
