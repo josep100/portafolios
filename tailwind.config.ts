@@ -26,15 +26,9 @@ export default {
           '50%': { transform: 'scale(1.07)' },
           '100%': { transform: 'scale(1)' },
         },
-        'move-y':{
-          '0%': { transform: 'translateY(10)'},
-          '100%': { transform: 'translateY(10)'},
-          '25%': { transform: 'translateY(-10)'},
-        },
       },
       animation: {
         'zoom': 'zoom .3s ease-in',
-        'move-y': 'move-y 7s ease-in-out infinite',
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
