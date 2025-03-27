@@ -51,12 +51,28 @@ html {
   }
 }
 
+@keyframes move-y{  
+  0% { 
+      transform: translateY(10)
+  }
+  100% { 
+      transform: translateY(10)
+  }
+  25% {
+      transform: translateY(-10)
+  }
+}
+
 .animate-wave-1 {
   animation: wave-1 7s linear infinite
 }
 
 .animate-wave-2 {
   animation: wave-1 7s linear -.125s infinite,wave-2 7s ease -.125s infinite
+}
+
+.animate-move-y {
+  animation: move-y 7s ease-in-out infinite;
 }
 
 
