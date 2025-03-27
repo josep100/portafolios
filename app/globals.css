@@ -53,13 +53,13 @@ html {
 
 @keyframes move-y{  
   0% { 
-      transform: translateY(10)
+      transform: translateY(10px)
   }
   100% { 
-      transform: translateY(10)
+      transform: translateY(10px)
   }
   25% {
-      transform: translateY(-10)
+      transform: translateY(-10px)
   }
 }
 
