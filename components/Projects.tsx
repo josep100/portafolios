@@ -21,7 +21,7 @@ export default function Projects(){
                             <figure>
                                 <Image className='h-auto w-full object-cover' src={img} alt={title} width={0} height={0}/>
                                 <figcaption className='my-2 px-2 text-xl font-semibold dark:text-white text-black'>{title}</figcaption>
-                                <figcaption className='line-clamp-5 px-2 text-sm dark:text-gray-300 text-black'>{description}</figcaption>
+                                <figcaption className='px-2 text-sm dark:text-gray-300 text-black'>{description}</figcaption>
                             </figure>
                             <div className='mt-auto flex justify-center gap-10 p-3'>
                                 <a
@@ -30,6 +30,7 @@ export default function Projects(){
                                         : "bg-primary-500 hover:animate-zoom dark:border-2 dark:border-cyan-500 dark:bg-transparent"
                                     )}
                                     href={description === "Próximamente" ? "#" : link} onClick={(e) => description === "proximamente" && e.preventDefault()}
+                                    target='_blanc'
                                 >
                                     <EyeHubIcon />
                                     Demo
@@ -40,6 +41,7 @@ export default function Projects(){
                                         :'border-cyan-500  text-cyan-500 hover:animate-zoom'
                                     }`}
                                     href={description === 'Próximamente' ? '#' : gitHub} onClick={(e) => description === 'proximamente' && e.preventDefault()}
+                                    target='_blanck'
                                 >
                                     <GitHubIcon />
                                     Repo
