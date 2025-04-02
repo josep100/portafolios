@@ -5,6 +5,7 @@ import LinkHubIcon from '@/components/icons/LinkHubicon';
 import GitHubIcon from '@/components/icons/GitHubicon';
 import emailjs from 'emailjs-com';
 import StarryBackground from '@/components/Starrybackground';
+import Link from "next/link";
 
 export default function Contact(){
     const form = useRef();
@@ -40,13 +41,13 @@ export default function Contact(){
             <div className="dark:bg-transparent bg-slate-200">
                 <div className="container mx-auto grid grid-cols-2 gap-10 overflow-hidden px-2 py-32 sm:gap-5 sm:px-4">
                     <div data-aos="fade-right" data-aos-duration="200" className="col-span-2 sm:col-span-1 dark:text-white text-black">
-                            <h1 className="mb-5 text-2xl font-bold uppercase">mantengámonos en contacto</h1>
-                            <a href="https://www.linkedin.com/in/josep-perales/" className="mr-4 inline-block hover:animate-zoom" target="_blank">
+                            <h1 className="mb-5 text-2xl font-bold uppercase">Contacta conmigo</h1>
+                            <Link href="https://www.linkedin.com/in/josep-perales/" className="mr-4 inline-block hover:animate-zoom" target="_blank">
                                 <LinkHubIcon tamaño="text-3xl" />
-                            </a>
-                            <a href="https://github.com/josep100" className="inline-block hover:animate-zoom" target="_blank">
+                            </Link>
+                            <Link href="https://github.com/josep100" className="inline-block hover:animate-zoom" target="_blank">
                                 <GitHubIcon tamaño="text-3xl" />
-                            </a>
+                            </Link>
                     </div>
                     <div data-aos="fade-left" data-aos-duration="200" className='col-span-2 sm:col-span-1 dark:text-white text-black'>
                         <form ref={form} onSubmit={handleSubmit(sendEmail)}>

@@ -5,6 +5,7 @@ import EyeHubIcon from '@/components/icons/EyeHubicon';
 import GitHubIcon from '@/components/icons/GitHubicon';
 import StarryBackground from '@/components/Starrybackground';
 import clsx from "clsx";
+import Link from 'next/link';
 
 export default function Projects(){
     const { theme } = useTheme();
@@ -24,7 +25,7 @@ export default function Projects(){
                                 <figcaption className='px-2 text-sm dark:text-gray-300 text-black'>{description}</figcaption>
                             </figure>
                             <div className='mt-auto flex justify-center gap-10 p-3'>
-                                <a
+                                <Link
                                     className={clsx("flex items-center gap-1 rounded-full px-2 py-1 text-white shadow-[inset_0px_-4px_2px_rgb(0_0_0_/_25%)] ", description === 'Próximamente' 
                                         ? "bg-gray-400 cursor-not-allowed" 
                                         : "bg-primary-500 hover:animate-zoom dark:border-2 dark:border-cyan-500 dark:bg-transparent"
@@ -34,8 +35,8 @@ export default function Projects(){
                                 >
                                     <EyeHubIcon />
                                     Demo
-                                </a>
-                                <a 
+                                </Link>
+                                <Link 
                                     className={`flex items-center gap-1 rounded-full px-2 py-1 border-2 ${description === 'Próximamente'
                                         ?'bg-gray-400 cursor-not-allowed text-white border-gray-500'
                                         :'border-cyan-500  text-cyan-500 hover:animate-zoom'
@@ -45,7 +46,7 @@ export default function Projects(){
                                 >
                                     <GitHubIcon />
                                     Repo
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     ))

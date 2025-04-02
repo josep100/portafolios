@@ -7,6 +7,7 @@ import LinkHubIcon from "@/components/icons/LinkHubicon";
 import HamburgerHubIcon from '@/components/icons/HamburgerHubicon';
 import DarkMode from '@/components/Darkmode';
 import clsx from 'clsx';
+import Link from "next/link";
 
 
 export default function Header ({setIsOpen }: { setIsOpen: React.Dispatch<React.SetStateAction<boolean>> }){
@@ -52,8 +53,8 @@ export default function Header ({setIsOpen }: { setIsOpen: React.Dispatch<React.
                         <DarkMode />
                     </div>
                     <div className='ml:auto hidden gap-5 text-2xl lg:flex dark:text-white text-black '>
-                        <a href="https://github.com/" target='black' className='hover:animate-zoom'><GitHubIcon /></a>
-                        <a href="https://www.linkedin.com/feed/" target='black' className='hover:animate-zoom'><LinkHubIcon /></a>
+                        <Link href="https://github.com/josep100" target='_blank' className='hover:animate-zoom'><GitHubIcon /></Link>
+                        <Link href="https://www.linkedin.com/in/josep-perales/" target='_blank' className='hover:animate-zoom'><LinkHubIcon /></Link>
                     </div>
                 </div>
             </header>
