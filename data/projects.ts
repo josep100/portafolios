@@ -9,11 +9,11 @@ export const projects = [
     },
     {
         id:2,
-        link: "https://www.concatofilippo.com/companymanagementsystem/",
+        link: "https://nextjs-invoice-panel.vercel.app/",
         img: "/images/panel.png",
         title: "Panel de Facturas y clientes",
         gitHub: "https://github.com/josep100/nextjs-panel",
-        description: "App con ejemplo práctico de un dashboard interactivo construido con Next.js 13 utilizando la nueva API de rutas (App Router). Aplicación desarrollada a través de un curso donde aprendes a construir interfaces dinámicas y eficientes mediante el uso de características modernas de Next.js.",
+        description: "App con ejemplo práctico de un dashboard interactivo construido con Next.js 13 utilizando la nueva API de rutas (App Router). Aplicación desarrollada a través de un curso donde aprendes a construir interfaces dinámicas y eficientes mediante el uso de características modernas de Next.js. user: user@nextmail.com contraseña: 123456" ,
     },
     {
         id:3,
