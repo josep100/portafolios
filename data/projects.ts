@@ -5,7 +5,7 @@ export const projects = [
         img: "/images/portafolio.png",
         title: "Portafolios",
         gitHub: "https://github.com/josep100/portafolios",
-        description: "Mi portafolio es un reflejo digital de mi crecimiento, mis habilidades y mi experiencia en el ámbito del desarrollo FontEnd. Esta plataforma, creada meticulosamente con HTML, JavaScript, Nextjs y Tailwind, ofrece una visión integral de los proyectos que he llevado a cabo.",
+        description: "Mi portafolio es un reflejo digital de mi crecimiento, mis habilidades y mi experiencia en el ámbito del desarrollo FrontEnd. Esta plataforma, creada meticulosamente con HTML, JavaScript, Nextjs y Tailwind, ofrece una visión integral de los proyectos que he llevado a cabo.",
     },
     {
         id:2,
