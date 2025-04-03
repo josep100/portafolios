@@ -26,7 +26,7 @@ export default function About(){
                             <img className="w-80 h-80 object-cover rounded-2xl border-4 dark:border-gray-50 border-cyan-500 shadow-lg " src="/images/IMG_4336.jpeg" alt="Sobre mi" />
                         </figure>
                     <div className="flex justify-center lg:justify-start">
-                        <Link href="/files/JOSEP PERALES-CV1.pdf" className="mt-5 inline-flex gap-2 rounded-full dark:bg-gray-700 bg-primary-500 px-3 py-2 text-white shadow-[inset_0px_-4px_2px_rgb(0_0_0_/_25%)] hover:animate-zoom z-40 relative items-center " target='_blank' download>
+                        <Link href="/files/JOSEP PERALES-CV-TI.pdf" className="mt-5 inline-flex gap-2 rounded-full dark:bg-gray-700 bg-primary-500 px-3 py-2 text-white shadow-[inset_0px_-4px_2px_rgb(0_0_0_/_25%)] hover:animate-zoom z-40 relative items-center " target='_blank' download>
                             <DownHubIcon />
                             Descargar CV
                         </Link>
