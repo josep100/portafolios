@@ -6,7 +6,7 @@ Este es un proyecto de portafolio profesional desarrollado con **Next.js 14**, u
 
 ## 🚀 Demo en Vivo
 
-🔗 [portafolio-josep.vercel.app](https://portafolio-josep.vercel.app)
+🔗 [Portafolio Josep](https://portafolio-josep.vercel.app)
 
 ---
 
