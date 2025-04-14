@@ -14,11 +14,15 @@ export default function About(){
                 <div className="col-span-2 lg:col-span-1">
                     <h1 className="mb-5 text-2xl font-bold uppercase dark:text-white text-black text-center">sobre mí</h1>
                     <p className=' whitespace-pre-line dark:text-white text-black'>
-                            Soy un desarrollador Frontend apasionado por crear interfaces intuitivas y eficientes. Me destaco por mi capacidad de resolución de problemas, abordando cada desafío con un enfoque lógico y creativo para encontrar la mejor solución.
-                            {'\n'}{'\n'}
-                            Creo en el poder del trabajo en equipo y disfruto colaborar con diseñadores, desarrolladores y otros profesionales para construir experiencias digitales de alto impacto. Mi capacidad de adaptabilidad me permite aprender rápidamente nuevas tecnologías y ajustarme a diferentes entornos de desarrollo, asegurando siempre la entrega de productos de calidad.
-                            {'\n'}{'\n'}
-                            Siempre busco mejorar mis habilidades y enfrentar nuevos retos que me ayuden a crecer como profesional. 
+                    {`Hola, soy Josep 👋 
+                    
+                    Soy desarrollador Frontend y disfruto creando interfaces web que no solo se vean bien, sino que también funcionen con fluidez. Llevo un año trabajando con tecnologías como React, Next.js, TypeScript y Tailwind CSS, y cada proyecto que hago me ayuda a mejorar tanto a nivel técnico como personal.
+
+                    Desarrollé este portafolio desde cero para mostrar lo que sé hacer y también para seguir aprendiendo. Me gusta cuidar los detalles, escribir código limpio y pensar en cómo mejorar la experiencia del usuario en cada pantalla.
+
+                    Me motiva trabajar en equipo, rodearme de personas de las que pueda aprender y aportar valor en proyectos reales. Uno de mis objetivos principales es seguir creciendo como profesional en entornos colaborativos, donde pueda enfrentar nuevos retos, mejorar mis habilidades y convertirme en un desarrollador cada vez más completo.
+
+                    Estoy abierto a nuevas oportunidades que me permitan aprender, aportar y avanzar en mi carrera como Frontend Developer 🚀`}
                     </p>
                 </div>
                 <div className="col-span-2 place-self-center lg:col-span-1 pt-0 md:pt-12 ">
@@ -26,7 +30,7 @@ export default function About(){
                             <img className="w-80 h-80 object-cover rounded-2xl border-4 dark:border-gray-50 border-cyan-500 shadow-lg " src="/images/IMG_4336.jpeg" alt="Sobre mi" />
                         </figure>
                     <div className="flex justify-center lg:justify-start">
-                        <Link href="/files/JOSEP PERALES-CV-TI.pdf" className="mt-5 inline-flex gap-2 rounded-full dark:bg-gray-700 bg-primary-500 px-3 py-2 text-white shadow-[inset_0px_-4px_2px_rgb(0_0_0_/_25%)] hover:animate-zoom z-40 relative items-center " target='_blank' download>
+                        <Link href="/files/JOSEP PERALES-CV1.pdf" className="mt-5 inline-flex gap-2 rounded-full dark:bg-gray-700 bg-primary-500 px-3 py-2 text-white shadow-[inset_0px_-4px_2px_rgb(0_0_0_/_25%)] hover:animate-zoom z-40 relative items-center " target='_blank' download>
                             <DownHubIcon />
                             Descargar CV
                         </Link>
