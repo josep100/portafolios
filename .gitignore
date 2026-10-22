@@ -1,0 +1,31 @@
+#Dependencias
+
+node_modules/
+
+Next.js
+
+.next/
+out/
+build/
+
+#Archivos locales de macOS
+
+.DS_Store
+
+#Variables de entorno
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+#Archivos de registro
+
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+#Configuración local del editor
+
+.vscode/
