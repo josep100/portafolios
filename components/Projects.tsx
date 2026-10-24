@@ -25,6 +25,7 @@ export default function Projects(){
                                 <figcaption className='px-2 text-sm dark:text-gray-300 text-black'>{description}</figcaption>
                             </figure>
                             <div className='mt-auto flex justify-center gap-10 p-3'>
+                                {id > 1 &&
                                 <Link
                                     className={clsx("flex items-center gap-1 rounded-full px-2 py-1 text-white shadow-[inset_0px_-4px_2px_rgb(0_0_0_/_25%)] ", description === 'Próximamente' 
                                         ? "bg-gray-400 cursor-not-allowed" 
@@ -35,7 +36,7 @@ export default function Projects(){
                                 >
                                     <EyeHubIcon />
                                     Demo
-                                </Link>
+                                </Link>}
                                 <Link 
                                     className={`flex items-center gap-1 rounded-full px-2 py-1 border-2 ${description === 'Próximamente'
                                         ?'bg-gray-400 cursor-not-allowed text-white border-gray-500'
